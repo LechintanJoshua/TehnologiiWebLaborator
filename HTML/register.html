@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Înregistrare</title>
+  <link rel="stylesheet" href="../CSS/register_style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <h1>Înregistrează-te</h1>
+
+      <form class="register-form" action="#" method="post" enctype="multipart/form-data">
+        <div class="row">
+          <label for="username">Nume utilizator</label>
+          <input type="text" id="username" name="username" placeholder="ex: ioanaTW" required>
+        </div>
+
+        <div class="row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="ex: nume@exemplu.com" required>
+        </div>
+
+        <div class="row two-col">
+          <div>
+            <label for="password">Parolă</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <div>
+            <label for="confirm_password">Confirmă parola</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <label for="birthdate">Data nașterii</label>
+          <input type="date" id="birthdate" name="birthdate">
+        </div>
+
+        <div class="row">
+          <p class="group-title">Gen</p>
+          <div class="radio-option">
+            <label for="femeie">Femeie</label>
+            <input type="radio" id="femeie" name="gen" value="femeie">
+          </div>
+          <div class="radio-option">
+            <label for="barbat">Bărbat</label>
+            <input type="radio" id="barbat" name="gen" value="barbat">
+          </div>
+          <div class="radio-option">
+            <label for="altul">Altul</label>
+            <input type="radio" id="altul" name="gen" value="altul">
+          </div>
+        </div>
+
+        <div class="row">
+          <label for="tara">Țară</label>
+          <select id="tara" name="tara">
+            <option value="">Selectează</option>
+            <option value="ro">România</option>
+            <option value="md">Moldova</option>
+            <option value="altele">Altă țară</option>
+          </select>
+        </div>
+
+        <div class="row">
+          <label for="tip_cont">Tip cont</label>
+          <select id="tip_cont" name="tip_cont">
+            <option value="">Selectează</option>
+            <option value="student">Student</option>
+            <option value="profesor">Profesor</option>
+          </select>
+        </div>
+
+        <div class="row">
+          <p class="group-title">Interese</p>
+          <div class="checkbox-grid">
+            <label><input type="checkbox" name="interese" value="frontend">Frontend</label>
+            <label><input type="checkbox" name="interese" value="backend">Backend</label>
+            <label><input type="checkbox" name="interese" value="uxui">UX/UI</label>
+            <label><input type="checkbox" name="interese" value="javascript">JavaScript</label>
+            <label><input type="checkbox" name="interese" value="python">Python Web</label>
+            <label><input type="checkbox" name="interese" value="wordpress">WordPress</label>
+            <label><input type="checkbox" name="interese" value="django">Django</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <label for="avatar">Încarcă avatar</label>
+          <input type="file" id="avatar" name="avatar">
+        </div>
+
+        <div class="row">
+          <label for="descriere">Scurtă descriere</label>
+          <textarea id="descriere" name="descriere" rows="3" placeholder="Scrie câteva cuvinte despre tine..."></textarea>
+        </div>
+
+        <div class="actions">
+          <button type="submit" class="btn primary">Creează cont</button>
+          <button type="reset" class="btn ghost">Resetează</button>
+        </div>
+
+        <p class="login-link">Ai deja cont?
+          <a href="login.html">Mergi la login</a></p>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
