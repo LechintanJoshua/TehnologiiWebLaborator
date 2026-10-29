@@ -1,0 +1,48 @@
+.important {
+    color: red;
+    font-size: 18px;
+    padding: 10px;
+}
+
+p.important {
+    color: blue;
+}
+
+.card-a {
+    box-sizing: content-box;
+    width: 200px;
+    padding: 20px;
+    border: 5px solid black;
+}
+
+.card-b {
+    box-sizing: border-box;
+    width: 200px;
+    padding: 20px;
+    border: 5px solid black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+    gap: 1rem;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .layout {
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
